@@ -53,6 +53,10 @@ sudo apt update && sudo apt install -y fbi
 sudo fbi -d /dev/fb1 -T 1 -a /path/to/your/image.jpg
 ```
 
+## Limitations
+no touch screen support.
+No Backlight Control
+
 ## Credits / Derived From
 Derived conceptually from `trichner/4d-hats` and the original 4D Systems driver repository. Remodelled completely to support modern virtual page mapping structures (`vmalloc`, `FBINFO_VIRTFB`, and `fb_deferred_io_mmap`) to completely prevent kernel Oops on page faults.
 
