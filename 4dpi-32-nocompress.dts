@@ -1,0 +1,32 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    fragment@0 {
+        target = <&spi0>;
+        __overlay__ {
+            status = "okay";
+            #address-cells = <1>;
+            #size-cells = <0>;
+
+            /* Disable the default spidev node on CS0 if it exists. */
+            spidev@0 {
+                status = "disabled";
+            };
+
+            dpi32: 4dpi32@0 {
+                compatible = "4dsystems,4dpi-32-nocompress";
+                reg = <0>;
+                spi-max-frequency = <48000000>;
+                rotate = <0>;
+            };
+        };
+    };
+
+    __overrides__ {
+        speed = <&dpi32>, "spi-max-frequency:0";
+        rotate = <&dpi32>, "rotate:0";
+    };
+};
