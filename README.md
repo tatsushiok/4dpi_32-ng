@@ -16,6 +16,9 @@ cd rpi-4dpi-nocompress
 
 # Compile the kernel module
 make
+sudo mkdir -p /lib/modules/$(shell uname -r)/kernel/drivers/video/fbdev/4dpi
+sudo cp 4dpi_nocompress.ko /lib/modules/$(shell uname -r)/kernel/drivers/video/fbdev/4dpi/
+sudo depmod -a
 
 # Compile and install the Device Tree Overlay
 dtc -@ -I dts -O dtb -o 4dpi-32-nocompress.dtbo 4dpi-32-nocompress.dts
