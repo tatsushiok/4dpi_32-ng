@@ -7,7 +7,7 @@ This repository provides a 100% open-source, modernized clean driver for the 4D 
 
 It removes the deprecated clunky closed-source compressed binary blob (`compress-v6.o`) and directly communicates via the original 4D control-byte raw SPI protocol.
 
-## 🛠️ How to Install
+## How to Install
 
 ### 1. Clone and Build
 ```bash
