@@ -55,6 +55,8 @@ Since the primary GPU (`vc4-kms-v3d`) captures `/dev/fb0` for HDMI, this display
 sudo apt update && sudo apt install -y fbi
 sudo fbi -d /dev/fb1 -T 1 -a /path/to/your/image.jpg
 ```
+## Screenshot
+![Tux Test](tax_screen.jpg
 
 ## Limitations
 no touch screen support.
