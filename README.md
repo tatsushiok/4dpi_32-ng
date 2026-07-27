@@ -3,9 +3,25 @@
 
 # 4DPi-32 Non-Compressed Driver for Linux 6.x (Raspberry Pi OS Trixie)
 
-This repository provides a 100% open-source, modernized clean driver for the 4D Systems 4DPi-32 display, specifically targeted for **Linux Kernel 6.x (Raspberry Pi OS Trixie / armv6l)** on legacy Raspberry Pi models.
+This repository provides a driver for the 4D Systems 4DPi-32 display, specifically targeted for **Linux Kernel 6.x (Raspberry Pi OS Trixie / armv6l)** on legacy Raspberry Pi models.
+It removes the deprecated closed-source compressed binary blob (`compress-v6.o`) and directly communicates via the original 4D control-byte raw SPI protocol.
+## Features
 
-It removes the deprecated clunky closed-source compressed binary blob (`compress-v6.o`) and directly communicates via the original 4D control-byte raw SPI protocol.
+- Raspberry Pi OS Trixie (Linux 6.14)
+- 4D Systems 4DPi-32
+- 320x240 RGB565 framebuffer
+- Device Tree Overlay support
+- Automatic driver binding
+- No compress-v6.o / compress-v7.o required
+- No custom DMA SPI driver required
+- 
+## Tested Environment
+
+- Raspberry Pi Model B
+- Raspberry Pi OS Trixie
+- Linux 6.14
+- 4DPi-32
+- SPI Clock 48 MHz
 
 ## How to Install
 
