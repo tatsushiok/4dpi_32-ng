@@ -92,5 +92,5 @@ No Backlight Control
 ## Credits / Derived From
 Derived conceptually from `trichner/4d-hats` and the original 4D Systems driver repository. Remodelled completely to support modern virtual page mapping structures (`vmalloc`, `FBINFO_VIRTFB`, and `fb_deferred_io_mmap`) to completely prevent kernel Oops on page faults.
 
-## 📄 License
+##  License
 GPL-2.0
