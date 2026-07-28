@@ -15,6 +15,8 @@ Original driver could not be used on Linux 6.x because:
 - unavailable compression objects
 - Device Tree binding issues
 
+(Last supported system is Raspberry Pi OS Buster / Linux 5.10.103)
+
 This project provides a non-compressed framebuffer driver for Linux 6.x.
 
 ## Features
