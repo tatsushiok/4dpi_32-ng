@@ -5,6 +5,17 @@
 
 This repository provides a driver for the 4D Systems 4DPi-32 display, specifically targeted for **Linux Kernel 6.x (Raspberry Pi OS Trixie / armv6l)** on legacy Raspberry Pi models.
 It removes the deprecated closed-source compressed binary blob (`compress-v6.o`) and directly communicates via the original 4D control-byte raw SPI protocol.
+
+## Background
+
+Original driver could not be used directly on
+Linux 6.x because:
+
+- legacy Raspberry Pi dependencies
+- removed fbdev flags
+- unavailable compression objects
+- Device Tree binding issues
+
 ## Features
 
 - Raspberry Pi OS Trixie (Linux 6.14)
@@ -14,7 +25,7 @@ It removes the deprecated closed-source compressed binary blob (`compress-v6.o`)
 - Automatic driver binding
 - No compress-v6.o / compress-v7.o required
 - No custom DMA SPI driver required
-- 
+  
 ## Tested Environment
 
 - Raspberry Pi Model B
