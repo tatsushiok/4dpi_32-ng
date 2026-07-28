@@ -8,13 +8,14 @@ It removes the deprecated closed-source compressed binary blob (`compress-v6.o`)
 
 ## Background
 
-Original driver could not be used directly on
-Linux 6.x because:
+Original driver could not be used on Linux 6.x because:
 
 - legacy Raspberry Pi dependencies
 - removed fbdev flags
 - unavailable compression objects
 - Device Tree binding issues
+
+This project provides a non-compressed framebuffer driver for Linux 6.x.
 
 ## Features
 
