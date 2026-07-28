@@ -26,6 +26,9 @@ Linux 6.x because:
 - No compress-v6.o / compress-v7.o required
 - No custom DMA SPI driver required
   
+## Screenshot
+![Test Image 1](tax_screen.jpeg)
+
 ## Tested Environment
 
 - Raspberry Pi Model B
